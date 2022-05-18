@@ -1,0 +1,102 @@
+body nav ul li:hover, body footer .redes .iconitos:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  animation-duration: 0.5s;
+  color: #919191; }
+
+body {
+  background-color: #e5e5e5;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 3rem; }
+  body nav .barraNavegacion {
+    justify-content: center;
+    text-align: center;
+    justify-items: center; }
+  body nav ul li {
+    margin: 0rem 1rem 0rem 3rem;
+    color: #373737;
+    font-weight: bold; }
+  body nav .slogan {
+    font-weight: 900; }
+  body hr {
+    height: 15px;
+    background-image: linear-gradient(90deg, black, #e5e5e5);
+    border: 0;
+    height: 1px;
+    margin: 0rem 1rem 0rem 1rem; }
+  body main {
+    padding-bottom: 2rem; }
+    body main h1 {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+      color: #5a5a5a;
+      padding-top: 0.5rem;
+      font-size: 1.2rem; }
+    body main h2 {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+      font-size: 1rem;
+      padding: 0rem 5rem 0rem 5rem; }
+    body main p {
+      justify-content: center;
+      text-align: center;
+      justify-items: center; }
+  body footer {
+    position: absolute;
+    bottom: 0; }
+    body footer .derechos {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+      padding-top: 0.5rem;
+      font-size: 0.7rem; }
+    body footer .redes {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+      padding-bottom: 0.4rem; }
+      body footer .redes .iconitos {
+        margin: 0.5rem; }
+
+.imagen {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  padding: 0.5rem;
+  max-width: 3rem; }
+
+.formulario {
+  padding: 1rem;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.img-fluid {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  max-height: 33;
+  max-width: auto;
+  padding: 2rem; }
+
+.imagineLogo {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  max-height: auto;
+  max-width: 200px; }
+
+#carouselExampleIndicators {
+  margin: 2rem; }
+
+.topnav a:hover {
+  border-bottom: 3px solid black; }
+
+.topnav a.active {
+  border-bottom: 3px solid black; }
+
+@media only screen and (max-width: 600px) {
+  .mediaPic {
+    width: 100vw; } }

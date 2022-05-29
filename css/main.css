@@ -1,4 +1,4 @@
-body nav ul li:hover, body footer .redes .iconitos:hover {
+body header nav ul li:hover, body footer .redes .iconitos:hover {
   transition: 0.5s;
   transform: scale(1.2);
   animation-duration: 0.5s;
@@ -9,15 +9,15 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 3rem; }
-  body nav .barraNavegacion {
+  body header nav .barraNavegacion {
     justify-content: center;
     text-align: center;
     justify-items: center; }
-  body nav ul li {
+  body header nav ul li {
     margin: 0rem 1rem 0rem 3rem;
     color: #373737;
     font-weight: bold; }
-  body nav .slogan {
+  body header nav .slogan {
     font-weight: 900; }
   body hr {
     height: 15px;
@@ -61,6 +61,44 @@ body {
       body footer .redes .iconitos {
         margin: 0.5rem; }
 
+.mainPortfolios {
+  display: grid;
+  grid-template-areas: "portfolios portfolios" "nuestrosTrabajos nuestrosTrabajos" "portfoliosSubtituloA portfoliosSubtituloB" "imgVizzentino imgModelo"; }
+
+.portfolios {
+  grid-area: portfolios; }
+
+.nuestrosTrabajos {
+  grid-area: nuestrosTrabajos; }
+
+.imgVizzentino {
+  grid-area: imgVizzentino;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem; }
+
+.imgModelo {
+  grid-area: imgModelo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem; }
+
+.portfoliosSubtituloA {
+  grid-area: portfoliosSubtituloA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem; }
+
+.portfoliosSubtituloB {
+  grid-area: portfoliosSubtituloB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem; }
+
 .imagen {
   justify-content: center;
   text-align: center;
@@ -99,4 +137,18 @@ body {
 
 @media only screen and (max-width: 600px) {
   .mediaPic {
-    width: 100vw; } }
+    width: 100vw; }
+  .mainPortfolios {
+    display: grid;
+    grid-template-areas: "portfolios" "nuestrosTrabajos" "portfoliosSubtituloA" "imgVizzentino" "portfoliosSubtituloB" "imgModelo";
+    justify-content: center; }
+  .portfoliosSubtituloA {
+    grid-area: portfoliosSubtituloA; }
+  .portfoliosSubtituloB {
+    grid-area: portfoliosSubtituloB; }
+  .nuestrosTrabajos {
+    grid-area: nuestrosTrabajos; }
+  .imgVizzentino {
+    grid-area: imgVizzentino; }
+  .imgModelo {
+    grid-area: imgModelo; } }
